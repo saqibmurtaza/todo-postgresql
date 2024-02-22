@@ -2,32 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.form{
+    @apply
+    border pt-5 pb-2 px-8 font-bold m-10 shadow-lg text-center w-full 
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.pholder{
+    @apply
+    block border mb-2 px-3 py-1 shadow-lg w-full 
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.butt{
+    @apply
+    border bg-black mb-2 px-3 py-1 rounded-md text-white w-full
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.task{
+    @apply
+    border bg-white mb-2 px-3 py-1 rounded-md text-start text-black w-full 
 }
