@@ -28,11 +28,9 @@ const TodoApp = async() => {
             rows.map((iterate, index) =>
               <div key={index} className='flex justify-between'>
                 <div  className='task'>{iterate.name}</div>
-                <div>
+                {/* <div>
                 <DeleteButton todoId={iterate.id} />
-                </div>
-                
-  
+                </div> */}
               </div>
             )
           }
